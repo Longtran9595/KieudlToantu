@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<h1>CHƯƠNG TRÌNH TÍNH DIỆN TÍCH HÌNH TRÒN</h1>
+<p>Bán kính hình tròn:</p>
+<input type="number" id="bankinh">
+<button type="button" onclick="nhanvao()">Kết quả</button>
+<script>
+    function nhanvao() {
+        let a = +document.getElementById("bankinh").value;
+        let b = a*a*3.14;
+    document.write('<br>')
+    document.write('Diện tích hình tròn: '+b);
+    }
+</script>
+</body>
+</html>

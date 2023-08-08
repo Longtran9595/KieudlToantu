@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<button onclick="cong()">Cộng</button>
+<button onclick="tru()">Trừ</button>
+<button onclick="nhan()">Nhân</button>
+<button onclick="chia()">Chia</button>
+
+<p id="kq"></p>
+<script>
+    function cong(){
+        let a = +document.getElementById("so1").value;
+        let b = +document.getElementById("so2").value;
+        let result =  a + b;
+        document.getElementById("kq").innerHTML = "ket qua: " + result;
+    }
+    function tru(){
+        let a = +document.getElementById("so1").value;
+        let b = +document.getElementById("so2").value;
+        let result =  a - b;
+        document.getElementById("kq").innerHTML = "ket qua: " + result;
+    }
+    function nhan(){
+        let a = +document.getElementById("so1").value;
+        let b = +document.getElementById("so2").value;
+        let result =  a * b;
+        document.getElementById("kq").innerHTML = "ket qua: " + result;
+    }
+    function chia(){
+        let a = +document.getElementById("so1").value;
+        let b = +document.getElementById("so2").value;
+        let result =  a / b;
+        document.getElementById("kq").innerHTML = "ket qua: " + result;
+    }
+</script>
+</body>
+</html>
